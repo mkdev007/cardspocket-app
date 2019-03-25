@@ -1,0 +1,37 @@
+{
+  "name": "com.example.nfc.readwrite",
+  "version": "0.0.1",
+  "displayName": "NFC_Read_Write",
+  "cordova": {
+    "platforms": [
+      "windows",
+      "android",
+      "ios"
+    ],
+    "plugins": {
+      "cordova-plugin-remote-injection": {},
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-dialogs": {},
+      "cordova-plugin-android-permissions": {},
+      "phonegap-plugin-barcodescanner": {
+        "ANDROID_SUPPORT_V4_VERSION": "27.+"
+      },
+      "phonegap-nfc": {
+        "NFC_USAGE_DESCRIPTION": "Read NFC Tags"
+      },
+      "cordova-plugin-firebase": {}
+    }
+  },
+  "dependencies": {
+    "cordova-android": "^7.1.4",
+    "cordova-ios": "^4.5.5",
+    "cordova-plugin-android-permissions": "^1.0.0",
+    "cordova-plugin-dialogs": "~1.2.1",
+    "cordova-plugin-firebase": "2.0.5",
+    "cordova-plugin-remote-injection": "^0.5.2",
+    "cordova-plugin-whitelist": "1",
+    "cordova-windows": "^6.0.1",
+    "phonegap-nfc": "^1.0.3",
+    "phonegap-plugin-barcodescanner": "^8.0.0"
+  }
+}

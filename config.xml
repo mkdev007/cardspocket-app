@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.phonegap.cardspocket" version="1.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>CardsPocket</name>
+    <description>
+        CardsPocket app
+    </description>
+    <author href="http://github.com/don">
+        Meelis Koger
+    </author>
+    <content src="https://www.cardspocket.com/home" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <access origin="*" />
+    <icon height="1024" src="res/ios/icon.png" width="1024" />
+    <preference name="phonegap-version" value="cli-7.1.0" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-navigation href="http://*/*" />
+    <allow-navigation href="https://*/*" />
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+        <config-file parent="NFCReaderUsageDescription" target="*-Info.plist">
+            <string>App requires access to the NFC reader</string>
+        </config-file>
+        <config-file parent="NSCameraUsageDescription" target="*-Info.plist">
+            <string>App requires camera to scan barcodes</string>
+        </config-file>
+        <config-file parent="NSPhotoLibraryUsageDescription" target="*-Info.plist">
+            <string>App requires access to the photo library</string>
+        </config-file>
+        <config-file parent="NSLocationWhenInUseUsageDescription" target="*-Info.plist">
+            <string>App need location access to find things nearby</string>
+        </config-file>
+        <icon height="180" src="res/ios/Icon-App-60x60@3x.png" width="180" />
+        <icon height="60" src="res/ios/Icon-App-60x60@1x.png" width="60" />
+        <icon height="120" src="res/ios/Icon-App-60x60@2x.png" width="120" />
+        <icon height="76" src="res/ios/Icon-App-76x76@1x.png" width="76" />
+        <icon height="152" src="res/ios/Icon-App-76x76@2x.png" width="152" />
+        <icon height="40" src="res/ios/Icon-App-20x20@2x.png" width="40" />
+        <icon height="80" src="res/ios/Icon-App-40x40@2x.png" width="80" />
+        <icon height="57" src="res/ios/Icon-App-57x57@1x.png" width="57" />
+        <icon height="114" src="res/ios/Icon-App-57x57@2x.png" width="114" />
+        <icon height="72" src="res/ios/Icon-App-72x72@1x.png" width="72" />
+        <icon height="144" src="res/ios/Icon-App-72x72@2x.png" width="144" />
+        <icon height="29" src="res/ios/Icon-App-29x29@1x.png" width="29" />
+        <icon height="58" src="res/ios/Icon-App-29x29@2x.png" width="58" />
+        <icon height="50" src="res/ios/Icon-Small-50x50@1x.png" width="50" />
+        <icon height="100" src="res/ios/Icon-Small-50x50@2x.png" width="100" />
+    </platform>
+    <platform name="android">
+        <icon density="ldpi" src="res/mipmap-ldpi/ic_launcher.png" />
+        <icon density="mdpi" src="res/mipmap-mdpi/ic_launcher.png" />
+        <icon density="hdpi" src="res/mipmap-hdpi/ic_launcher.png" />
+        <icon density="xhdpi" src="res/mipmap-xhdpi/ic_launcher.png" />
+        <icon density="xxhdpi" src="res/mipmap-xxhdpi/ic_launcher.png" />
+        <icon density="xxxhdpi" src="res/mipmap-xxxhdpi/ic_launcher.png" />
+        <allow-intent href="market:*" />
+    </platform>
+    <plugin name="cordova-plugin-dialogs" spec="~1.2.1" />
+    <plugin name="cordova-plugin-remote-injection" spec="^0.5.2" />
+    <preference name="CRIInjectFirstFiles" value="www/js/index.js" />
+    <preference name="OverrideUserAgent" value="Mozilla/5.0 My Browser" />
+    <plugin name="cordova-plugin-android-permissions" spec="^1.0.0" />
+    <plugin name="phonegap-plugin-barcodescanner" spec="^8.0.0">
+        <variable name="ANDROID_SUPPORT_V4_VERSION" value="27.+" />
+    </plugin>
+    <plugin name="phonegap-nfc" spec="^1.0.3">
+        <variable name="NFC_USAGE_DESCRIPTION" value="Read NFC Tags" />
+    </plugin>
+    <plugin name="cordova-plugin-firebase" spec="2.0.5" />
+    <engine name="windows" spec="^6.0.1" />
+    <engine name="android" spec="^7.1.4" />
+    <engine name="ios" spec="^4.5.5" />
+</widget>

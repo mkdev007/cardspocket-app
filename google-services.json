@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "544963444778",
+    "firebase_url": "https://cardpocketlive.firebaseio.com",
+    "project_id": "cardpocketlive",
+    "storage_bucket": "cardpocketlive.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:544963444778:android:cbc47d077f75dac3",
+        "android_client_info": {
+          "package_name": "com.phonegap.cardspocket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "544963444778-3e8ddpjrdqsj23qct8ep7h0f2je4cmpt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTo-bhSsA2iDG9MUU9JrGqJxR3LaVI-Rw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
